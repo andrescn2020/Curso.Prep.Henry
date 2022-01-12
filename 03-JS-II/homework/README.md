@@ -11,6 +11,11 @@
 
 ### Aca tendras acceso a las [Soluciones]( https://github.com/atralice/Curso.Prep.Henry/blob/solution/03-JS-II/homework/homework.js )
 
+* For es un bucle que reitera un codigo hasta que se cumpla x condicion, esto nos sirve para ahorrar lineas de codigo porque asi no repetimos una instruccion determinada una y otra vez.
+* && es un operador condicional el cual busca que se cumplan mas de una condicion para ejecutar un codigo.
+* || es un operador condicional que va a buscar que una de las condiciones sea valida para ejecutarse.
+* ! es un operador de comparacion que significa que no es igual a algo. que es distinto.
+
 
 
 For: Llamamos for a una porcion de codigo que se ejecuta en bucle, se especifica una variable, una condicion y el incremento, el codigo se va a iterar una y otra vez hasta que la condicion se deje de cumplir.
