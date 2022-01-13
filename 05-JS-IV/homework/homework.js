@@ -6,6 +6,13 @@ function crearGato(nombre, edad) {
   // Agrega un método (funcion) llamado "meow" que devuelva el string "Meow!"
   // Devuelve el objeto
   // Tu código:
+  let gato = {
+    nombre: nombre,
+    edad: edad,
+    meow: function() { return "Meow!"; }
+  }
+
+  return gato;
 }
 
 
@@ -14,19 +21,30 @@ function agregarPropiedad(objeto, property) {
   // Devuelve el objeto
   // NOTA: El nombre de la propiedad no es "propiedad", el nombre es el valor del argumento llamado "property" (una cadena/string)
   // Tu código:
+
+   objeto[property] = null;
+   return objeto;
+  
 }
 
 function invocarMetodo(objeto, metodo) {
   // "metodo" es una cadena que contiene el nombre de un método (funcion) en el objeto
   // Invoca ese método
   // Nada necesita ser devuelto ("returned")
-  // Tu código:
+  // Tu código: 
+  objeto[metodo]();
 }
 
 function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
   // "objetoMisterioso" tiene una propiedad llamada "numeroMisterioso"
   // Multiplica el numeroMisterioso por 5 y devuelve el producto
   // Tu código:
+
+  let producto = objetoMisterioso.numeroMisterioso * 5;
+
+  return producto;
+  
+  
 
 }
 
@@ -35,6 +53,8 @@ function eliminarPropiedad(objeto, unaPropiedad) {
   // tip: tenes que usar bracket notation
   // Devuelve el objeto
   // Tu código:
+  delete objeto[unaPropiedad];
+  return objeto;
 }
 
 function nuevoUsuario(nombre, email, password) {
@@ -42,12 +62,25 @@ function nuevoUsuario(nombre, email, password) {
   // Devuelve el objeto
   // Tu código:
 
+  let obj = {
+    nombre: nombre,
+    email: email,
+    password: password
+  }
+
+  return obj;
+
 }
 
 function tieneEmail(usuario) {
   // Devuelve "true" si el usuario tiene un valor definido para la propiedad "email"
   // De lo contratio, devuelve "false"
   // Tu código:
+  if (usuario.email){
+    return true;
+  } else {
+    return false;
+  }
 }
 
 
@@ -56,6 +89,12 @@ function tienePropiedad(objeto, propiedad) {
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código:
+
+  if (objeto[propiedad]){
+    return true;
+  } else {
+    return false;
+  }
 }
 
 function verificarPassword(usuario, password) {
