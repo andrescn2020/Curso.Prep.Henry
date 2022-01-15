@@ -101,6 +101,17 @@ Persona.prototype.datos = function () {return this.nombre + ", " + this.edad + "
 
 }
 
+let nombres = ["andres", "antonio", "raul", "sebastian", "sofia"];
+let nuevoArray = [];
+nuevoArray = nombres.map(function(elemento, indice){
+  if (elemento[0] === "a"){
+    return elemento;
+  } else {
+    return elemento;
+  }
+});
+
+
 
   
 
